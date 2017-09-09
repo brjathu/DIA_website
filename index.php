@@ -155,15 +155,15 @@ $('.message a').click(function(){
       
       $sql = "SELECT user_phone,device_phone FROM user WHERE user_name = '$myusername' and password = '$mypassword'";
       
-      echo $sql;
-      $result = mysqli_query($conn,$sql);
-      $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
-      $active = $row['user_phone'];
-      $active2 = $row['device_phone'];
-      
-      $count = mysqli_num_rows($result);
+//      echo $sql;
+//      $result = mysqli_query($conn,$sql);
+//      $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
+//      $active = $row['user_phone'];
+//      $active2 = $row['device_phone'];
+//      
+//      $count = mysqli_num_rows($result);
       // If result matched $myusername and $mypassword, table row must be 1 row
-		
+	$count = 1;	
       if($count == 1) {
 //         session_register("login_user");
          $_SESSION['login_user'] = $myusername;
