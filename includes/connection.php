@@ -10,6 +10,7 @@
 // Check connection
         if ($conn->connect_error) {
             die("Connection failed: " . $conn->connect_error);
+            echo "no connection<br>";
         }
         echo "Connected successfully<br>";
         
